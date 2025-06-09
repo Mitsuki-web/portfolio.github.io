@@ -9,7 +9,7 @@ html {
 body {
 	line-height: 1;
 	color: #ffffff;
-	background-color: #0071BC;
+	background-color: #116ddd;
 }
 
 .container {
@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-	color: #a3a3a3;
+	color: #ffb829;
 }
 
 img {
@@ -50,7 +50,7 @@ img {
 
 /* ランナー・ゲート */
 .runner {
-	background-color: #0071BC;
+	background-color: #116ddd;
 }
 
 .runner-gate_x {
@@ -169,6 +169,11 @@ footer {
 	align-items: center;
 }
 
+h4 {
+	color: #ffb829;
+	font-size: 6vw;
+}
+
 h5 {
 	font-weight: 200;
 	font-size: 0.8vw;
@@ -177,8 +182,49 @@ h5 {
 
 #home footer {
 	position: fixed;
-	bottom: 0%;
+	top: calc(45vw + 110px);
 	width: 92vw;
+}
+
+.footer-bg {
+	height: 20vw;
+}
+
+.bg-white {
+	background-color: #ffffff;
+	width: calc(100vw - 8vw);
+	height: 16vw;
+	border-bottom-left-radius: 2vw;
+	border-bottom-right-radius: 2vw;
+}
+
+.address {
+	justify-content: center;
+	padding-top: 4.5vw;
+}
+
+.arrow-line {
+	margin: 4vw 0 0 2vw;
+	width: 5vw;
+	height: 1vw;
+	transform: rotate(-45deg);
+	position: relative;
+	background-color: #ffb829;
+}
+
+.arrow-line::after {
+	content: '';
+	display: block;
+	border: 1vw solid #ffb829;
+	border-left: none;
+	border-bottom: none;
+	width: 4vw;
+	height: 4vw;
+	transform: rotate(45deg);
+	transform-origin: top right;
+	position: absolute;
+	right: -1vw;
+	top: 0.5vw;
 }
 
 /* ホーム */
@@ -199,7 +245,9 @@ h5 {
 h1 {
 	font-size: 10vw;
 	margin: -2.25vw 0 -0.5vw;
-	color: #0071BC;
+	color: #ffb829;
+	z-index: 100;
+	position: relative;
 }
 
 .p {
@@ -282,15 +330,18 @@ h1 {
 
 .home-about h2 {
 	bottom: 0;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0.5vw;
 }
 
 h2 {
 	letter-spacing: 0.5vw;
 	font-size: 1.5vw;
 	position: absolute;
-	background-color: #0071BC;
 	width: fit-content;
 	padding: 1.3vw 2.5vw;
+	border-bottom-right-radius: 0.5vw;
+	color: #ffb829;
 }
 
 .screan {
@@ -398,15 +449,17 @@ h2 {
 .text-container {
 	width: 87vw;
 	height: fit-content;
-	border: 1vw solid #0071BC;
-	border-radius: 2vw;
-	padding: 2vw 3vw;
-	color: #0071BC;
+	border-radius: 0.5vw;
+	padding: 2.5vw 3.5vw;
+	color: #ffffff;
+	background-color: #116ddd;
 }
 
-.text-container h3 {
+.profile h3 {
 	font-size: 2.8em;
 	font-weight: 700;
+	line-height: 1em;
+	width: fit-content;
 }
 
 .kari {
@@ -417,17 +470,19 @@ h6 {
 	font-size: 1.2em;
 	font-weight: 300;
 	margin-left: 1vw;
+	line-height: 1em;
+	width: fit-content;
 }
 
 .name {
 	letter-spacing: 0.1em;
-	align-items: flex-end
+	align-items: flex-end;
 }
 
 .profile-text {
 	margin-top: 2vw;
 	font-size: 1em;
-	font-weight: 400;
+	font-weight: 500;
 	letter-spacing: 0.1em;
 	line-height: 2em;
 }
@@ -437,13 +492,9 @@ h6 {
 }
 
 /* アバウト スキルズ */
-.skill-box {
+.skills .text-container {
 	height: calc(100% - 8vw);
 	width: 28vw;
-	border: 1vw solid #0071BC;
-	border-radius: 2vw;
-	padding: 2vw 3vw;
-	color: #0071BC;
 	text-align: center;
 	position: relative;
 }
@@ -505,7 +556,7 @@ p {
 .skill-tool {
 	font-weight: 200;
 	font-size: 1vw;
-	bottom: 2vw;
+	bottom: 2.5vw;
 	position: absolute;
 }
 
@@ -524,15 +575,6 @@ p {
 	letter-spacing: 0.1em;
 	width: 37vw;
 	padding-right: 1em;
-}
-
-.strength-container {
-	width: 87vw;
-	height: fit-content;
-	border: 1vw solid #0071BC;
-	border-radius: 2vw;
-	padding: 2vw 3vw;
-	color: #0071BC;
 }
 
 .strength-text {
@@ -610,12 +652,8 @@ p {
 	bottom: 100%;
 }
 
-.works-container {
-	width: 87vw;
-	height: fit-content;
-	border: 1vw solid #0071BC;
-	border-radius: 2vw;
-	padding: 3vw;
+#works .text-container{
+	padding: 3.5vw;
 }
 
 .works-content {
@@ -646,10 +684,10 @@ p {
 	background-color: #696969;
 }
 
-.work-text {
+.work-caption {
 	width: 25vw;
 	margin: 0 auto;
-	color: #0071BC;
+	color: #ffffff;
 	padding: 1vw;
 	font-size: 1.4vw;
 }
@@ -661,53 +699,6 @@ h3 {
 .work-tag {
 	margin-top: 0.5vw;
 	font-weight: 200;
-}
-
-h4 {
-	color: #0071BC;
-	font-size: 6vw;
-}
-
-.bg-blue {
-	background-color: #0071BC;
-	height: 20vw;
-}
-
-.bg-white {
-	background-color: #ffffff;
-	width: calc(100vw - 8vw);
-	height: 16vw;
-	border-bottom-left-radius: 2vw;
-	border-bottom-right-radius: 2vw;
-}
-
-.address {
-	justify-content: center;
-	padding-top: 4.5vw;
-}
-
-.arrow-line {
-	margin: 4vw 0 0 2vw;
-	background-color: #0071BC;
-	width: 5vw;
-	height: 1vw;
-	transform: rotate(-45deg);
-	position: relative;
-}
-
-.arrow-line::after {
-	content: '';
-	display: block;
-	border: 1vw solid #0071BC;
-	border-left: none;
-	border-bottom: none;
-	width: 4vw;
-	height: 4vw;
-	transform: rotate(45deg);
-	transform-origin: top right;
-	position: absolute;
-	right: -1vw;
-	top: 0.5vw;
 }
 
 /* ワーク１ */
@@ -726,13 +717,8 @@ h4 {
 	font-size: 5vw;
 }
 
-.work-title {
-	width: 87vw;
-	height: fit-content;
-	border: 1vw solid #0071BC;
-	border-radius: 2vw;
-	padding: 4vw 3vw 3vw;
-	color: #0071BC;
+.work-title .text-container{
+	padding: 4.5vw 3.5vw 3.5vw;
 	text-align: center;
 }
 
@@ -779,9 +765,33 @@ h4 {
 	width: 10.2vw;
 }
 
-.work-outline {
-	font-size: 1.2em;
+.work-outline p {
+	font-size: 1.1em;
 	font-weight: 500;
 	letter-spacing: 0.1em;
-	line-height: 3em;
+	line-height: 2em;
+}
+
+.work-text-container h3 {
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	width: 20vw;
+	padding-right: 1em;
+	line-height: 2em;
+}
+
+.work-text {
+	font-size: 1.1em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 2em;
+	width: 57vw;
+}
+
+.work-text-container .text-container {
+	display: flex;
+	flex-direction: column;
+	gap: 3vw;
+	padding: 5vw 5.5vw;
 }
