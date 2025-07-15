@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-	color: #ff7bac;
+	color: #ffffff;
 }
 
 img {
@@ -100,8 +100,36 @@ p {
 /* @media (min-width: 800px) { */
 
 /* ヘッダー */
+header {
+	position: absolute;
+	align-items: center;
+	height: 5vw;
+	width: 95vw;
+	font-weight: 700;
+	letter-spacing: 0.2vw;
+	font-size: 1.2vw;
+	z-index: 5;
+	color: #000000;
+}
+
 .icon {
 	flex: 1;
+	position: relative;
+}
+
+.icon a {
+	font-family: trade-gothic-next-condensed, sans-serif;
+	font-weight: 700;
+	font-size: 2.8vw;
+	letter-spacing: 0;
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translateY(-50%);
+}
+
+.icon a:hover {
+	color: #000000;
 }
 
 .main-nav {
@@ -124,12 +152,11 @@ nav {
 }
 
 .button a {
-	background-color: #000000;
+	color: #000000;
 	width: fit-content;
-	color: #ffffff;
-	padding: 0.6vw 1.3vw;
-	border: 0.21vw solid #000000;
+	padding: 0.7vw 1.5vw 0.75vw;
 	border-radius: 5vw;
+	border: 0.3vw solid #000000;
 	position: absolute;
 	top: 50%;
 	right: 0%;
@@ -137,39 +164,55 @@ nav {
 }
 
 .button a:hover {
-	background-color: #ff7bac;
-	border: 0.21vw solid #000000;
-	color: #000000;
+	background-color: #ffffff;
 }
 
-.button a:hover::after {
+/* .button a:hover::after {
 	background-image: url(../images/link_arrow_black.png);
-}
+} */
 
 .button a::after {
 	content: '';
 	display: inline-block;
 	width: 1vw;
 	height: 1vw;
-	background-image: url(../images/link_arrow_white.png);
+	background-image: url(../images/link_arrow_black.png);
 	background-size: contain;
 	vertical-align: bottom;
 }
 
-header {
-	position: absolute;
-	align-items: center;
-	height: 5vw;
-	width: 95vw;
-	font-weight: 700;
-	letter-spacing: 0.2vw;
-	font-size: 1.2vw;
-}
-
 /* ホーム */
 .title_img {
-	margin-top: 5vw;
-	margin-bottom: 50vw;
+	position: absolute;
+	top: 5vw;
+}
+
+.top-img {
+	position: absolute;
+	left: -2.5vw;
+	width: 100vw;
+	height: 80vw;
+	top: 0;
+	z-index: -3;
+	background-image: url(../images/top.png);
+	background-size: 135%;
+	background-position: bottom;
+}
+
+.top-png {
+	position: absolute;
+	left: -2.5vw;
+	width: 100vw;
+	height: 80vw;
+	top: 0;
+	z-index: 1;
+	background-image: url(../images/top_front.png);
+	background-size: 135%;
+	background-position: bottom;
+}
+
+#home .space {
+	height: 80vw;
 }
 
 /* ホーム・ワークス */
@@ -318,6 +361,38 @@ h4 {
 	color: #000000;
 }
 
+/* ワーク */
+.work-top {
+	position: absolute;
+	height: 52vw;
+	width: 100vw;
+	overflow: hidden;
+	left: -2.5vw;
+}
+
+.work .border {
+	margin-bottom: 6vw;
+}
+
+.work .title-container {
+	height: 52vw;
+	position: relative;
+}
+
+.work .title-bg {
+	height: 52.1vw;
+	background-size: cover;
+	width: 100.1vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.space {
+	height: 52vw;
+}
+
 .work-title {
 	position: absolute;
 	bottom: 0;
@@ -327,33 +402,37 @@ h4 {
 .work-title h1 {
 	font-weight: 700;
 	font-size: 4vw;
+	background-color: #000000dd;
+	color: #ffffff;
+	padding: 1vw;
+	width: fit-content;
 }
 
 .work-title p {
-	padding-top: 3vw;
+	margin-top: 1vw;
 	width: 55vw;
+	background-color: #000000dd;
+	color: #ffffff;
+	padding: 1vw;
 }
 
-/* ワーク */
-.work .title-bg {
-	height: 52vw;
+.overview p {
+	padding: 2.5vw;
 }
 
-.space {
-	height: 52vw;
+.overview h3 {
+	font-size: 3vw;
+	font-weight: 700;
+	padding: 0 2.5vw;
 }
 
-.work .contents {
-	padding: 4vw 0;
-}
-
-.work .contents p {
+.outline p {
 	width: 63vw;
 	padding: 1vw 2.5vw;
 	font-size: 1vw;
 }
 
-.work .contents h3 {
+.outline h3 {
 	width: 32vw;
 	padding: 1vw 2.5vw;
 	font-size: 1vw;
@@ -364,6 +443,71 @@ h4 {
 }
 
 /* ワーク１ */
+
+/* ワーク２ */
+#work_2 .title-bg {
+	background-image: url(../images/pukapuka_daisakusen.jpg);
+}
+
+.overview {
+	margin-bottom: 10vw;
+}
+
+.steps {
+	gap: 1vw;
+}
+
+.step {
+	width: 31vw;
+}
+
+.step h4 {
+	font-size: 2.5vw;
+	font-weight: 700;
+	padding: 5vw 2.5vw 3vw;
+}
+
+.illust {
+	width: 26vw;
+	height: 20vw;
+	margin: 0 auto;
+	background-size: contain;
+	background-position: bottom;
+}
+
+.illust_1 {
+	background-image: url(../images/tsukuru.png);
+}
+
+.illust_2 {
+	background-image: url(../images/ukaberu.png);
+}
+
+.illust_3 {
+	background-image: url(../images/kangaeru.png);
+}
+
+.triangle {
+	height: 5vw;
+	width: 26vw;
+	background-color: #000000;
+	margin: 3vw auto;
+	clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+#work_2 h5 {
+	font-size: 2.3vw;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.8;
+}
+
+#work_2 h5 span{
+	font-size: 3.5vw;
+	font-weight: 700;
+	letter-spacing: 0.1vw;
+	border-bottom: 0.4vw solid #000000;
+}
 
 /* フッター */
 section {
@@ -397,6 +541,10 @@ footer .main-nav {
 
 footer a {
 	color: #ffffff;
+}
+
+footer a:hover {
+	color: #7a7a7a;
 }
 
 footer img {
