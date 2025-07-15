@@ -97,6 +97,19 @@ p {
 	text-justify: inter-ideograph;
 }
 
+/* .img-frame {
+	overflow: hidden;
+}
+
+.img-link {
+	transition:1s all;
+}
+
+.img-link:hover {
+	transform: scale(1.1, 1.1);
+	transition: 1s all;
+} */
+
 /* デスクトップ版
 --------------------------- */
 /* @media (min-width: 800px) { */
@@ -557,6 +570,10 @@ h4 {
 /* ワーク３ */
 #work_3 .title-bg {
 	background-image: url(../images/flyer_mockup_1.png);
+}
+
+#work_3 .visual {
+	width: 47vw;
 }
 
 /* フッター */
