@@ -97,18 +97,17 @@ p {
 	text-justify: inter-ideograph;
 }
 
-/* .img-frame {
-	overflow: hidden;
-}
-
 .img-link {
-	transition:1s all;
+	transition: filter 0.1s ease;
 }
 
 .img-link:hover {
-	transform: scale(1.1, 1.1);
-	transition: 1s all;
-} */
+	filter: brightness(0.8);
+}
+
+.img-smalls {
+	position: relative;
+}
 
 /* デスクトップ版
 --------------------------- */
@@ -247,10 +246,10 @@ nav {
 }
 
 .img-small {
-	background-position: center;
-	background-size: cover;
 	width: 31vw;
 	height: 20.5vw;
+	background-position: center;
+	background-size: cover;
 }
 
 .poster-mockup {
@@ -263,11 +262,6 @@ nav {
 
 .flyer-mockup {
 	background-image: url(../images/flyer_mockup_1.png);
-}
-
-.img-small img {
-	width: 31vw;
-	height: 20.5vw;
 }
 
 /* ホーム・アバウト */
