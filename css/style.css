@@ -84,6 +84,8 @@ h2 {
 	position: absolute;
 	left: -2.5vw;
 	z-index: -1;
+	background-image: url(../images/top.png);
+	background-size: cover;
 }
 
 p {
@@ -156,7 +158,7 @@ nav {
 	width: fit-content;
 	padding: 0.7vw 1.5vw 0.75vw;
 	border-radius: 5vw;
-	border: 0.3vw solid #000000;
+	border: 0.25vw solid #000000;
 	position: absolute;
 	top: 50%;
 	right: 0%;
@@ -223,12 +225,31 @@ nav {
 .img-big {
 	width: 63vw;
 	height: 42vw;
+	background-position: center;
+	background-size: cover;
+}
+
+.portfolio-mockup {
+	background-image: url(../images/portfolio_mockup.png);
 }
 
 .img-small {
-	display: flex;
-	flex-direction: column;
-	gap: 1vw;
+	background-position: center;
+	background-size: cover;
+	width: 31vw;
+	height: 20.5vw;
+}
+
+.poster-mockup {
+	background-image: url(../images/poster_mockup.png);
+}
+
+#home .poster-mockup {
+	margin-bottom: 1vw;
+}
+
+.flyer-mockup {
+	background-image: url(../images/flyer_mockup_1.png);
 }
 
 .img-small img {
@@ -326,9 +347,11 @@ h4 {
 }
 
 /* ワークス */
-#works img {
+.work-img {
 	width: 31vw;
 	height: 20.5vw;
+	background-position: center;
+	background-size: cover;
 }
 
 .works {
@@ -364,7 +387,7 @@ h4 {
 /* ワーク */
 .work-top {
 	position: absolute;
-	height: 52vw;
+	height: 60vw;
 	width: 100vw;
 	overflow: hidden;
 	left: -2.5vw;
@@ -375,22 +398,23 @@ h4 {
 }
 
 .work .title-container {
-	height: 52vw;
+	height: 60vw;
 	position: relative;
 }
 
 .work .title-bg {
-	height: 52.1vw;
+	height: 60vw;
 	background-size: cover;
-	width: 100.1vw;
+	width: 100.vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	background-position: center;
 }
 
 .space {
-	height: 52vw;
+	height: 60vw;
 }
 
 .work-title {
@@ -428,13 +452,13 @@ h4 {
 
 .outline p {
 	width: 63vw;
-	padding: 1vw 2.5vw;
+	padding: 2vw 2.5vw;
 	font-size: 1vw;
 }
 
 .outline h3 {
 	width: 32vw;
-	padding: 1vw 2.5vw;
+	padding: 2vw 2.5vw;
 	font-size: 1vw;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
@@ -442,11 +466,18 @@ h4 {
 	color: #7a7a7a;
 }
 
+.visuals .flex-box {
+	gap: 1vw;
+}
+
 /* ワーク１ */
+#work_1 .title-bg {
+	background-image: url(../images/portfolio_mockup.png);
+}
 
 /* ワーク２ */
 #work_2 .title-bg {
-	background-image: url(../images/pukapuka_daisakusen.jpg);
+	background-image: url(../images/poster_mockup.png);
 }
 
 .overview {
@@ -502,11 +533,31 @@ h4 {
 	line-height: 1.8;
 }
 
-#work_2 h5 span{
+#work_2 h5 span {
 	font-size: 3.5vw;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
 	border-bottom: 0.4vw solid #000000;
+}
+
+#work_2 .visuals .logo {
+	width: 31vw;
+	padding: 2.5vw;
+}
+
+#work_2 .visual {
+	width: 31vw;
+	box-shadow: 0 0 0.2vw 0 #7a7a7a;
+}
+
+.visuals h3 {
+	padding: 5vw 0 1vw;
+	font-size: 2vw;
+}
+
+/* ワーク３ */
+#work_3 .title-bg {
+	background-image: url(../images/flyer_mockup_1.png);
 }
 
 /* フッター */
