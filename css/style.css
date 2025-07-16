@@ -84,7 +84,7 @@ h2 {
 	position: absolute;
 	left: -2.5vw;
 	z-index: -1;
-	background-image: url(../images/top.png);
+	background-image: url(../images/top.jpg);
 	background-size: cover;
 }
 
@@ -208,7 +208,7 @@ nav {
 	height: 80vw;
 	top: 0;
 	z-index: -3;
-	background-image: url(../images/top.png);
+	background-image: url(../images/top.jpg);
 	background-size: 135%;
 	background-position: bottom;
 }
@@ -242,7 +242,7 @@ nav {
 }
 
 .portfolio-mockup {
-	background-image: url(../images/portfolio_mockup.png);
+	background-image: url(../images/portfolio_mockup.jpg);
 }
 
 .img-small {
@@ -253,7 +253,7 @@ nav {
 }
 
 .poster-mockup {
-	background-image: url(../images/poster_mockup.png);
+	background-image: url(../images/poster_mockup.jpg);
 }
 
 #home .poster-mockup {
@@ -261,7 +261,7 @@ nav {
 }
 
 .flyer-mockup {
-	background-image: url(../images/flyer_mockup_1.png);
+	background-image: url(../images/flyer_mockup_1.jpg);
 }
 
 /* ホーム・アバウト */
@@ -478,12 +478,12 @@ h4 {
 
 /* ワーク１ */
 #work_1 .title-bg {
-	background-image: url(../images/portfolio_mockup.png);
+	background-image: url(../images/portfolio_mockup.jpg);
 }
 
 /* ワーク２ */
 #work_2 .title-bg {
-	background-image: url(../images/poster_mockup.png);
+	background-image: url(../images/poster_mockup.jpg);
 }
 
 .overview {
@@ -563,7 +563,7 @@ h4 {
 
 /* ワーク３ */
 #work_3 .title-bg {
-	background-image: url(../images/flyer_mockup_1.png);
+	background-image: url(../images/flyer_mockup_1.jpg);
 }
 
 #work_3 .visual {
