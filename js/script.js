@@ -9,7 +9,7 @@ function showPageByHash() {
 	if (target) {
 		target.classList.add('active');
 	} else {
-		document.getElementById('works').classList.add('active');
+		document.getElementById('home').classList.add('active');
 	}
 }
 
