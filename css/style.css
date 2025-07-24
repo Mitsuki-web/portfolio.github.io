@@ -241,10 +241,6 @@ nav {
 	background-size: cover;
 }
 
-.portfolio-mockup {
-	background-image: url(../images/portfolio_mockup.jpg);
-}
-
 .img-small {
 	width: 31vw;
 	height: 20.5vw;
@@ -252,16 +248,8 @@ nav {
 	background-size: cover;
 }
 
-.poster-mockup {
-	background-image: url(../images/poster_mockup.jpg);
-}
-
-#home .poster-mockup {
+#home .work_2 {
 	margin-bottom: 1vw;
-}
-
-.flyer-mockup {
-	background-image: url(../images/flyer_mockup_1.jpg);
 }
 
 /* ホーム・アバウト */
@@ -390,6 +378,38 @@ h4 {
 	color: #000000;
 }
 
+.work_1 {
+	background-image: url(../images/portfolio.jpg);
+}
+
+.work_2 {
+	background-image: url(../images/pukapuka.jpg);
+}
+
+.work_3 {
+	background-image: url(../images/ohtori.jpg);
+}
+
+.work_4 {
+	background-image: url(../images/akeome.jpg);
+}
+
+.work_5 {
+	background-image: url(../images/sotsuibe.jpg);
+}
+
+.work_6 {
+	background-image: url(../images/shinkan.jpg);
+}
+
+.work_7 {
+	background-image: url(../images/debyuibe.jpg);
+}
+
+.work_8 {
+	background-image: url(../images/ohtori_t.jpg);
+}
+
 /* ワーク */
 .work-top {
 	position: absolute;
@@ -476,16 +496,22 @@ h4 {
 	gap: 1vw;
 }
 
-/* ワーク１ */
-#work_1 .title-bg {
-	background-image: url(../images/portfolio_mockup.jpg);
+.visuals h3 {
+	padding: 5vw 0 1vw;
+	font-size: 2vw;
 }
+
+.visual {
+	width: 31vw;
+}
+
+.shadow {
+	box-shadow: 0 0 0.2vw 0 #7a7a7a;
+}
+
+/* ワーク１ */
 
 /* ワーク２ */
-#work_2 .title-bg {
-	background-image: url(../images/poster_mockup.jpg);
-}
-
 .overview {
 	margin-bottom: 10vw;
 }
@@ -551,24 +577,9 @@ h4 {
 	padding: 2.5vw;
 }
 
-#work_2 .visual {
-	width: 31vw;
-	box-shadow: 0 0 0.2vw 0 #7a7a7a;
-}
+/* ワーク４ */
 
-.visuals h3 {
-	padding: 5vw 0 1vw;
-	font-size: 2vw;
-}
-
-/* ワーク３ */
-#work_3 .title-bg {
-	background-image: url(../images/flyer_mockup_1.jpg);
-}
-
-#work_3 .visual {
-	width: 47vw;
-}
+/* ワーク５ */
 
 /* フッター */
 section {
