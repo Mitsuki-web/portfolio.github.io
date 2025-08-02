@@ -59,7 +59,9 @@ h1 {
 	font-family: trade-gothic-next-condensed, sans-serif;
 	font-weight: 800;
 	font-style: normal;
-	padding-top: 8vw;
+	margin-left: 2.5vw;
+	position: absolute;
+	bottom: 5vw;
 }
 
 h2 {
@@ -85,6 +87,10 @@ h2 {
 	z-index: -1;
 	background-image: url(../images/top.jpg);
 	background-size: cover;
+}
+
+.title-bg-space {
+	height: 21vw;
 }
 
 p {
@@ -624,16 +630,43 @@ h6 {
 --------------------------- */
 @media (max-width: 800px) {
 	html {
-		font-size: 2.1vw;
+		font-size: 2.8vw;
 	}
 
 	.title-bg {
-		height: 29vw;
+		height: 36vw;
+	}
+
+	.title-bg-space {
+		height: 36vw;
 	}
 
 	/* ヘッダー */
 	header {
 		height: 8vw;
+	}
+
+	.icon {
+		flex: 0;
+	}
+
+	.icon a {
+		font-size: 1.5rem;
+		width: 30vw;
+	}
+
+	header .main-nav {
+		flex: 0;
+		font-size: 1rem;
+		text-align: right;
+		top: 50%;
+		right: 0%;
+		transform: translate(0%, -50%);
+	}
+
+	.button {
+		display: none;
+		flex: 0;
 	}
 
 	/* ホーム */
@@ -643,7 +676,7 @@ h6 {
 
 	.top-img {
 		height: 95vh;
-		background-size: 180%;
+		background-size: cover;
 	}
 
 	#home .space {
@@ -733,7 +766,7 @@ h6 {
 		padding-top: 0vw;
 		padding-bottom: 5vw;
 	}
-	
+
 	.strength h3 {
 		width: 90vw;
 		padding-bottom: 1.5vw;
