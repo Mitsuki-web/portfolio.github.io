@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-/* 共通部分
+/* 共通部分・デスクトップ版
 --------------------------- */
 html {
-	font-size: 100%;
+	font-size: 1vw;
 }
 
 body {
@@ -55,7 +55,7 @@ img {
 }
 
 h1 {
-	font-size: 8vw;
+	font-size: 8rem;
 	font-family: trade-gothic-next-condensed, sans-serif;
 	font-weight: 800;
 	font-style: normal;
@@ -63,7 +63,7 @@ h1 {
 }
 
 h2 {
-	font-size: 5vw;
+	font-size: 5rem;
 	font-family: trade-gothic-next-condensed, sans-serif;
 	font-weight: 800;
 	font-style: normal;
@@ -78,7 +78,6 @@ h2 {
 }
 
 .title-bg {
-	background-color: #7a7a7a;
 	height: 21vw;
 	width: 100vw;
 	position: absolute;
@@ -89,7 +88,7 @@ h2 {
 }
 
 p {
-	font-size: 1.1vw;
+	font-size: 1.1rem;
 	font-weight: 400;
 	letter-spacing: 0.1vw;
 	line-height: 2.5;
@@ -105,14 +104,6 @@ p {
 	filter: brightness(0.8);
 }
 
-.img-smalls {
-	position: relative;
-}
-
-/* デスクトップ版
---------------------------- */
-/* @media (min-width: 800px) { */
-
 /* ヘッダー */
 header {
 	position: absolute;
@@ -121,7 +112,7 @@ header {
 	width: 95vw;
 	font-weight: 700;
 	letter-spacing: 0.2vw;
-	font-size: 1.2vw;
+	font-size: 1.2rem;
 	z-index: 5;
 	color: #000000;
 }
@@ -134,7 +125,7 @@ header {
 .icon a {
 	font-family: trade-gothic-next-condensed, sans-serif;
 	font-weight: 700;
-	font-size: 2.8vw;
+	font-size: 2.8rem;
 	letter-spacing: 0;
 	position: absolute;
 	top: 50%;
@@ -181,15 +172,11 @@ nav {
 	background-color: #ffffff;
 }
 
-/* .button a:hover::after {
-	background-image: url(../images/link_arrow_black.png);
-} */
-
 .button a::after {
 	content: '';
 	display: inline-block;
-	width: 1vw;
-	height: 1vw;
+	width: 1rem;
+	height: 1rem;
 	background-image: url(../images/link_arrow_black.png);
 	background-size: contain;
 	vertical-align: bottom;
@@ -197,32 +184,28 @@ nav {
 
 /* ホーム */
 .title_img {
-	position: absolute;
 	top: 5vw;
+	position: absolute;
 }
 
 .top-img {
+	height: 80vw;
+	background-size: 135%;
 	position: absolute;
 	left: -2.5vw;
 	width: 100vw;
-	height: 80vw;
 	top: 0;
-	z-index: -3;
-	background-image: url(../images/top.jpg);
-	background-size: 135%;
 	background-position: bottom;
 }
 
-.top-png {
-	position: absolute;
-	left: -2.5vw;
-	width: 100vw;
-	height: 80vw;
-	top: 0;
+.top-img_1 {
+	z-index: -3;
+	background-image: url(../images/top.jpg);
+}
+
+.top-img_2 {
 	z-index: 1;
 	background-image: url(../images/top_front.png);
-	background-size: 135%;
-	background-position: bottom;
 }
 
 #home .space {
@@ -271,13 +254,13 @@ nav {
 }
 
 .profile h3 {
-	font-size: 3.5vw;
+	font-size: 3.5rem;
 	letter-spacing: 0.2vw;
 }
 
 h4 {
 	letter-spacing: 0.1vw;
-	font-size: 1.1vw;
+	font-size: 1.1rem;
 	font-weight: 800;
 }
 
@@ -307,7 +290,7 @@ h4 {
 }
 
 .skill h3 {
-	font-size: 3.6vw;
+	font-size: 3.6rem;
 	font-weight: 700;
 	margin-bottom: 0.5vw;
 	letter-spacing: 0.1vw;
@@ -322,7 +305,7 @@ h4 {
 
 .tag {
 	margin-top: 2vw;
-	font-size: 1vw;
+	font-size: 1rem;
 	color: #7a7a7a;
 }
 
@@ -334,7 +317,7 @@ h4 {
 .strength h3 {
 	width: 32vw;
 	padding: 2.5vw;
-	font-size: 1.4vw;
+	font-size: 1.4rem;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
 	line-height: 1.6;
@@ -358,7 +341,7 @@ h4 {
 }
 
 .works h3 {
-	font-size: 1.6vw;
+	font-size: 1.6rem;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
 	margin: 1vw 0;
@@ -367,7 +350,7 @@ h4 {
 #works .tag {
 	margin-top: 0;
 	line-height: 1;
-	font-size: 1.1vw;
+	font-size: 1.1rem;
 }
 
 #works {
@@ -413,7 +396,7 @@ h4 {
 /* ワーク */
 .work-top {
 	position: absolute;
-	height: 60vw;
+	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
 	left: -2.5vw;
@@ -424,14 +407,14 @@ h4 {
 }
 
 .work .title-container {
-	height: 60vw;
+	height: 100vh;
 	position: relative;
 }
 
 .work .title-bg {
-	height: 60vw;
+	height: 100vh;
 	background-size: cover;
-	width: 100.vw;
+	width: 100vw;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -440,7 +423,7 @@ h4 {
 }
 
 .space {
-	height: 60vw;
+	height: 100vh;
 }
 
 .work-title {
@@ -451,7 +434,7 @@ h4 {
 
 .work-title h1 {
 	font-weight: 700;
-	font-size: 4vw;
+	font-size: 4rem;
 	background-color: #000000dd;
 	color: #ffffff;
 	padding: 1vw;
@@ -471,7 +454,7 @@ h4 {
 }
 
 .overview h3 {
-	font-size: 3vw;
+	font-size: 3rem;
 	font-weight: 700;
 	padding: 0 2.5vw;
 }
@@ -479,13 +462,13 @@ h4 {
 .outline p {
 	width: 63vw;
 	padding: 2vw 2.5vw;
-	font-size: 1vw;
+	font-size: 1rem;
 }
 
 .outline h3 {
 	width: 32vw;
 	padding: 2vw 2.5vw;
-	font-size: 1vw;
+	font-size: 1rem;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
 	line-height: 2.5;
@@ -498,7 +481,7 @@ h4 {
 
 .visuals h3 {
 	padding: 5vw 0 1vw;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 
 .visual {
@@ -525,7 +508,7 @@ h4 {
 }
 
 .step h4 {
-	font-size: 2.5vw;
+	font-size: 2.5rem;
 	font-weight: 700;
 	padding: 5vw 2.5vw 3vw;
 }
@@ -559,14 +542,14 @@ h4 {
 }
 
 #work_2 h5 {
-	font-size: 2.3vw;
+	font-size: 2.3rem;
 	font-weight: 500;
 	text-align: center;
 	line-height: 1.8;
 }
 
 #work_2 h5 span {
-	font-size: 3.5vw;
+	font-size: 3.5rem;
 	font-weight: 700;
 	letter-spacing: 0.1vw;
 	border-bottom: 0.4vw solid #000000;
@@ -596,19 +579,19 @@ footer {
 
 footer h2 {
 	margin-top: 0;
-	font-size: 2vw;
+	font-size: 2rem;
 }
 
 footer h3 {
 	margin-top: 2vw;
-	font-size: 5vw;
+	font-size: 5rem;
 }
 
 footer .main-nav {
 	gap: 5vw;
 	font-weight: 700;
 	letter-spacing: 0.2vw;
-	font-size: 1.1vw;
+	font-size: 1.1rem;
 }
 
 footer a {
@@ -631,8 +614,151 @@ footer .border {
 }
 
 h6 {
-	font-size: 0.8vw;
+	font-size: 0.8rem;
 	font-weight: 200;
 	padding: 0.9vw 0;
 	height: fit-content;
+}
+
+/* スマホ版
+--------------------------- */
+@media (max-width: 800px) {
+	html {
+		font-size: 2.1vw;
+	}
+
+	.title-bg {
+		height: 29vw;
+	}
+
+	/* ヘッダー */
+	header {
+		height: 8vw;
+	}
+
+	/* ホーム */
+	.title_img {
+		top: 8vw;
+	}
+
+	.top-img {
+		height: 95vh;
+		background-size: 180%;
+	}
+
+	#home .space {
+		height: 95vh;
+	}
+
+	/* ホーム・ワークス */
+	.works-img .flex-box {
+		flex-direction: column;
+		gap: 1vw;
+	}
+
+	.img-big {
+		width: 95vw;
+		height: 63vw;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.img-smalls {
+		display: flex;
+		gap: 1vw;
+	}
+
+	.img-small {
+		width: 47vw;
+		height: 31vw;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#home .work_2 {
+		margin-bottom: 0
+	}
+
+	/* ホーム・アバウト */
+	.profile .flex-box {
+		flex-direction: column;
+	}
+
+	.profile img {
+		width: 95vw;
+	}
+
+	.profile .text .flex-box {
+		flex-direction: row;
+	}
+
+	/* アバウト */
+	#about .profile img {
+		width: 50vw;
+		margin: 4vw auto;
+		height: fit-content;
+	}
+
+	#about .profile .flex-box {
+		flex-direction: column-reverse;
+	}
+
+	#about .profile .text .flex-box {
+		flex-direction: row;
+	}
+
+	.skills .flex-box {
+		flex-direction: column;
+		gap: 10vw;
+	}
+
+	.skill {
+		width: 90vw;
+		padding: 2.5vw;
+	}
+
+	.skill-icon {
+		width: 75%;
+		height: 100%;
+		padding: 10vw 0;
+		margin: 0 auto;
+	}
+
+	.strength .flex-box {
+		flex-direction: column;
+	}
+
+	.strength p {
+		width: 90vw;
+		padding-top: 0vw;
+		padding-bottom: 5vw;
+	}
+	
+	.strength h3 {
+		width: 90vw;
+		padding-bottom: 1.5vw;
+		font-size: 2rem;
+	}
+
+	/* ワークス */
+	.works .flex-box {
+		flex-direction: column;
+		gap: 10vw;
+	}
+
+	.work-img {
+		width: 95vw;
+		height: 63vw;
+		background-position: center;
+		background-size: cover;
+	}
+
+	/* ワーク */
+	.work-title h1 {
+		font-size: 3rem;
+	}
+
+	.work-title p {
+		width: 95vw;
+	}
 }
