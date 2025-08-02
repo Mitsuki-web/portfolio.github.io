@@ -715,6 +715,7 @@ h6 {
 	/* ホーム・アバウト */
 	.profile .flex-box {
 		flex-direction: column;
+		gap: 3vw;
 	}
 
 	.profile img {
@@ -728,7 +729,7 @@ h6 {
 	/* アバウト */
 	#about .profile img {
 		width: 50vw;
-		margin: 4vw auto;
+		margin: 3vw auto 0;
 		height: fit-content;
 	}
 
